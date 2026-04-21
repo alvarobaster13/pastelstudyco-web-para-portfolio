@@ -4,15 +4,22 @@
  */
 
 import { BookOpen } from 'lucide-react';
+import HeroImg from './assets/images/pastelstudy_hero_1776755542551.png';
+import MintErgoImg from './assets/images/mint_ergo_chair_1776755559344.png';
+import SkyFlowImg from './assets/images/sky_flow_chair_1776755573373.png';
+import PetalSoftImg from './assets/images/petal_soft_chair_1776755592054.png';
+import LilacLearnImg from './assets/images/lilac_learn_chair_1776755608962.png';
+import PeachPivotImg from './assets/images/peach_pivot_chair_1776755627831.png';
+import CloudCoreImg from './assets/images/cloud_core_chair_1776755645175.png';
 
 export default function App() {
   const products = [
-    { name: "Mint-Ergo", img: "mint_ergo_chair_1776755559344.png", desc: "Verde Menta Pastel", price: "$129" },
-    { name: "Sky-Flow", img: "sky_flow_chair_1776755573373.png", desc: "Azul Cielo Pálido", price: "$139" },
-    { name: "Petal-Soft", img: "petal_soft_chair_1776755592054.png", desc: "Rosa Cuarzo", price: "$149" },
-    { name: "Lilac-Learn", img: "lilac_learn_chair_1776755608962.png", desc: "Lavanda Suave", price: "$159" },
-    { name: "Peach-Pivot", img: "peach_pivot_chair_1776755627831.png", desc: "Tono Melocotón", price: "$169" },
-    { name: "Cloud-Core", img: "cloud_core_chair_1776755645175.png", desc: "Gris Perla", price: "$179" },
+    { name: "Mint-Ergo", img: MintErgoImg, desc: "Verde Menta Pastel", price: "$129" },
+    { name: "Sky-Flow", img: SkyFlowImg, desc: "Azul Cielo Pálido", price: "$139" },
+    { name: "Petal-Soft", img: PetalSoftImg, desc: "Rosa Cuarzo", price: "$149" },
+    { name: "Lilac-Learn", img: LilacLearnImg, desc: "Lavanda Suave", price: "$159" },
+    { name: "Peach-Pivot", img: PeachPivotImg, desc: "Tono Melocotón", price: "$169" },
+    { name: "Cloud-Core", img: CloudCoreImg, desc: "Gris Perla", price: "$179" },
   ];
 
   return (
@@ -49,7 +56,7 @@ export default function App() {
               <button className="px-8 py-3 bg-white text-slate-900 rounded-2xl font-bold shadow-md hover:shadow-xl transition-all border border-slate-100">Explorar Serie</button>
             </div>
           </div>
-          <img src="pastelstudy_hero_1776755542551.png" alt="PastelStudy Hero" className="rounded-[3rem] shadow-xl w-full" referrerPolicy="no-referrer" />
+          <img src={HeroImg} alt="PastelStudy Hero" className="rounded-[3rem] shadow-xl w-full" referrerPolicy="no-referrer" />
         </div>
       </header>
 
