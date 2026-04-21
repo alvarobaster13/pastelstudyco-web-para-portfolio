@@ -49,7 +49,7 @@ export default function App() {
               <button className="px-8 py-3 bg-white text-slate-900 rounded-2xl font-bold shadow-md hover:shadow-xl transition-all border border-slate-100">Explorar Serie</button>
             </div>
           </div>
-          <img src="https://images.unsplash.com/photo-1618220179428-22790b46a015?auto=format&fit=crop&w=1200&q=80" alt="PastelStudy Hero" className="rounded-[3rem] shadow-xl w-full object-cover aspect-[4/3] md:aspect-auto" />
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80" alt="PastelStudy Hero" className="rounded-[3rem] shadow-xl w-full object-cover aspect-[4/3] md:aspect-auto" />
         </div>
       </header>
 
