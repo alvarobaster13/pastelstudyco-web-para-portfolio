@@ -7,12 +7,12 @@ import { BookOpen } from 'lucide-react';
 
 export default function App() {
   const products = [
-    { name: "Mint-Ergo", img: "/images/mint_ergo_chair_1776755559344.png", desc: "Verde Menta Pastel", price: "$129" },
-    { name: "Sky-Flow", img: "/images/sky_flow_chair_1776755573373.png", desc: "Azul Cielo Pálido", price: "$139" },
-    { name: "Petal-Soft", img: "/images/petal_soft_chair_1776755592054.png", desc: "Rosa Cuarzo", price: "$149" },
-    { name: "Lilac-Learn", img: "/images/lilac_learn_chair_1776755608962.png", desc: "Lavanda Suave", price: "$159" },
-    { name: "Peach-Pivot", img: "/images/peach_pivot_chair_1776755627831.png", desc: "Tono Melocotón", price: "$169" },
-    { name: "Cloud-Core", img: "/images/cloud_core_chair_1776755645175.png", desc: "Gris Perla", price: "$179" },
+    { name: "Mint-Ergo", img: "public/images/mint_ergo_chair_1776755559344.png", desc: "Verde Menta Pastel", price: "$129" },
+    { name: "Sky-Flow", img: "public/images/sky_flow_chair_1776755573373.png", desc: "Azul Cielo Pálido", price: "$139" },
+    { name: "Petal-Soft", img: "public/images/petal_soft_chair_1776755592054.png", desc: "Rosa Cuarzo", price: "$149" },
+    { name: "Lilac-Learn", img: "public/images/lilac_learn_chair_1776755608962.png", desc: "Lavanda Suave", price: "$159" },
+    { name: "Peach-Pivot", img: "public/images/peach_pivot_chair_1776755627831.png", desc: "Tono Melocotón", price: "$169" },
+    { name: "Cloud-Core", img: "public/images/cloud_core_chair_1776755645175.png", desc: "Gris Perla", price: "$179" },
   ];
 
   return (
@@ -49,7 +49,7 @@ export default function App() {
               <button className="px-8 py-3 bg-white text-slate-900 rounded-2xl font-bold shadow-md hover:shadow-xl transition-all border border-slate-100">Explorar Serie</button>
             </div>
           </div>
-          <img src="/images/pastelstudy_hero_1776755542551.png" alt="PastelStudy Hero" className="rounded-[3rem] shadow-xl w-full" referrerPolicy="no-referrer" />
+          <img src="public/images/pastelstudy_hero_1776755542551.png" alt="PastelStudy Hero" className="rounded-[3rem] shadow-xl w-full" referrerPolicy="no-referrer" />
         </div>
       </header>
 
