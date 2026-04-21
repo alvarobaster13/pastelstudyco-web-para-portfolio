@@ -56,7 +56,7 @@ export default function App() {
               <button className="px-8 py-3 bg-white text-slate-900 rounded-2xl font-bold shadow-md hover:shadow-xl transition-all border border-slate-100">Explorar Serie</button>
             </div>
           </div>
-          <img src={HeroImg} alt="PastelStudy Hero" className="rounded-[3rem] shadow-xl w-full" referrerPolicy="no-referrer" />
+          <img src={HeroImg} alt="PastelStudy Hero" className="rounded-[3rem] shadow-xl w-full" />
         </div>
       </header>
 
@@ -65,7 +65,7 @@ export default function App() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map(p => (
             <div key={p.name} className="bg-white p-4 rounded-3xl shadow-xl shadow-slate-200/40 border border-slate-100 hover:scale-105 transition-transform duration-300">
-              <img src={p.img} alt={p.name} className="w-full aspect-square rounded-2xl mb-4" referrerPolicy="no-referrer" />
+              <img src={p.img} alt={p.name} className="w-full aspect-square rounded-2xl mb-4" />
               <div className="flex justify-between items-center">
                 <div>
                   <h4 className="font-bold text-sm mb-0.5">{p.name}</h4>
