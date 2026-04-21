@@ -4,22 +4,15 @@
  */
 
 import { BookOpen } from 'lucide-react';
-import HeroImg from './assets/pastelstudy_hero_1776755542551.jpg';
-import MintErgoImg from './assets/mint_ergo_chair_1776755559344.jpg';
-import SkyFlowImg from './assets/sky_flow_chair_1776755573373.jpg';
-import PetalSoftImg from './assets/petal_soft_chair_1776755592054.jpg';
-import LilacLearnImg from './assets/lilac_learn_chair_1776755608962.jpg';
-import PeachPivotImg from './assets/peach_pivot_chair_1776755627831.jpg';
-import CloudCoreImg from './assets/cloud_core_chair_1776755645175.jpg';
 
 export default function App() {
   const products = [
-    { name: "Mint-Ergo", img: MintErgoImg, desc: "Verde Menta Pastel", price: "$129" },
-    { name: "Sky-Flow", img: SkyFlowImg, desc: "Azul Cielo Pálido", price: "$139" },
-    { name: "Petal-Soft", img: PetalSoftImg, desc: "Rosa Cuarzo", price: "$149" },
-    { name: "Lilac-Learn", img: LilacLearnImg, desc: "Lavanda Suave", price: "$159" },
-    { name: "Peach-Pivot", img: PeachPivotImg, desc: "Tono Melocotón", price: "$169" },
-    { name: "Cloud-Core", img: CloudCoreImg, desc: "Gris Perla", price: "$179" },
+    { name: "Mint-Ergo", img: "https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=400&q=80", desc: "Verde Menta Pastel", price: "$129" },
+    { name: "Sky-Flow", img: "https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?auto=format&fit=crop&w=400&q=80", desc: "Azul Cielo Pálido", price: "$139" },
+    { name: "Petal-Soft", img: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=400&q=80", desc: "Rosa Cuarzo", price: "$149" },
+    { name: "Lilac-Learn", img: "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=400&q=80", desc: "Lavanda Suave", price: "$159" },
+    { name: "Peach-Pivot", img: "https://images.unsplash.com/photo-1581539250439-c96689b516dd?auto=format&fit=crop&w=400&q=80", desc: "Tono Melocotón", price: "$169" },
+    { name: "Cloud-Core", img: "https://images.unsplash.com/photo-1612372606404-0ab33e7187ee?auto=format&fit=crop&w=400&q=80", desc: "Gris Perla", price: "$179" },
   ];
 
   return (
@@ -56,7 +49,7 @@ export default function App() {
               <button className="px-8 py-3 bg-white text-slate-900 rounded-2xl font-bold shadow-md hover:shadow-xl transition-all border border-slate-100">Explorar Serie</button>
             </div>
           </div>
-          <img src={HeroImg} alt="PastelStudy Hero" className="rounded-[3rem] shadow-xl w-full" />
+          <img src="https://images.unsplash.com/photo-1618220179428-22790b46a015?auto=format&fit=crop&w=1200&q=80" alt="PastelStudy Hero" className="rounded-[3rem] shadow-xl w-full object-cover aspect-[4/3] md:aspect-auto" />
         </div>
       </header>
 
@@ -65,7 +58,7 @@ export default function App() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map(p => (
             <div key={p.name} className="bg-white p-4 rounded-3xl shadow-xl shadow-slate-200/40 border border-slate-100 hover:scale-105 transition-transform duration-300">
-              <img src={p.img} alt={p.name} className="w-full aspect-square rounded-2xl mb-4" />
+              <img src={p.img} alt={p.name} className="w-full aspect-square rounded-2xl mb-4 object-cover" />
               <div className="flex justify-between items-center">
                 <div>
                   <h4 className="font-bold text-sm mb-0.5">{p.name}</h4>
