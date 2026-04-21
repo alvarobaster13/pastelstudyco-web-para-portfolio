@@ -4,22 +4,15 @@
  */
 
 import { BookOpen } from 'lucide-react';
-import HeroImg from './assets/pastelstudy_hero_1776755542551.png';
-import MintErgoImg from './assets/mint_ergo_chair_1776755559344.png';
-import SkyFlowImg from './assets/sky_flow_chair_1776755573373.png';
-import PetalSoftImg from './assets/petal_soft_chair_1776755592054.png';
-import LilacLearnImg from './assets/lilac_learn_chair_1776755608962.png';
-import PeachPivotImg from './assets/peach_pivot_chair_1776755627831.png';
-import CloudCoreImg from './assets/cloud_core_chair_1776755645175.png';
 
 export default function App() {
   const products = [
-    { name: "Mint-Ergo", img: MintErgoImg, desc: "Verde Menta Pastel", price: "$129" },
-    { name: "Sky-Flow", img: SkyFlowImg, desc: "Azul Cielo Pálido", price: "$139" },
-    { name: "Petal-Soft", img: PetalSoftImg, desc: "Rosa Cuarzo", price: "$149" },
-    { name: "Lilac-Learn", img: LilacLearnImg, desc: "Lavanda Suave", price: "$159" },
-    { name: "Peach-Pivot", img: PeachPivotImg, desc: "Tono Melocotón", price: "$169" },
-    { name: "Cloud-Core", img: CloudCoreImg, desc: "Gris Perla", price: "$179" },
+    { name: "Mint-Ergo", img: "https://picsum.photos/seed/mintchair/600/600", desc: "Verde Menta Pastel", price: "$129" },
+    { name: "Sky-Flow", img: "https://picsum.photos/seed/bluechair/600/600", desc: "Azul Cielo Pálido", price: "$139" },
+    { name: "Petal-Soft", img: "https://picsum.photos/seed/pinkchair/600/600", desc: "Rosa Cuarzo", price: "$149" },
+    { name: "Lilac-Learn", img: "https://picsum.photos/seed/purplechair/600/600", desc: "Lavanda Suave", price: "$159" },
+    { name: "Peach-Pivot", img: "https://picsum.photos/seed/peachchair/600/600", desc: "Tono Melocotón", price: "$169" },
+    { name: "Cloud-Core", img: "https://picsum.photos/seed/whitechair/600/600", desc: "Gris Perla", price: "$179" },
   ];
 
   return (
@@ -56,7 +49,7 @@ export default function App() {
               <button className="px-8 py-3 bg-white text-slate-900 rounded-2xl font-bold shadow-md hover:shadow-xl transition-all border border-slate-100">Explorar Serie</button>
             </div>
           </div>
-          <img src={HeroImg} alt="PastelStudy Hero" className="rounded-[3rem] shadow-xl w-full" referrerPolicy="no-referrer" />
+          <img src="https://picsum.photos/seed/pastelstudy/1200/800" alt="PastelStudy Hero" className="rounded-[3rem] shadow-xl w-full" referrerPolicy="no-referrer" />
         </div>
       </header>
 
